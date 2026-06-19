@@ -2,9 +2,10 @@
 public class linearSearchIn2D {
 
     public static  boolean linearSearch(int a[][], int key) {
-        for (int i = 0; i < a.length; i++) {
+
+        for (int[] a1 : a) {
             for (int j = 0; j < a[0].length; j++) {
-                if (key == a[i][j]) {
+                if (key == a1[j]) {
                     return true;
                 }
             }
